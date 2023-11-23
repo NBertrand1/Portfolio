@@ -1,0 +1,656 @@
+body{
+    width: 1250px;
+    height: 4700px;
+    background: #151C21 center center no-repeat fixed;
+    font-family: Inter;
+    background-size: cover;
+    margin-right: auto;
+}
+
+header{
+    width: 1200px;
+    height: 130px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    position: sticky;
+    left: 35px;
+    top: 60px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    align-content: center;
+}
+
+nav .logo{
+    width: 173px;
+    height: 26px;
+    position: absolute;
+    left: 48px;
+    top: 52px;
+    background: url("Logo 2.png") no-repeat cover lightgray 50%;
+}
+
+.vertical-line{
+    border-left: 2px solid #000;
+    display: inline-block;
+    width: 2px;
+    height: 73px;
+    position: absolute;
+    left: 274px;
+    top: 32px;
+}
+.menu {
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    left: 250px;
+    top: 25px;
+}
+.menu li {
+    padding: 10px 24px;
+}
+ul li {
+    list-style: none;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+nav .search{
+    position: absolute;
+    right: 291px;
+    top: 53px;
+    color: rgba(255, 255, 255, 0.51);
+    font-family: Inter;
+    font-size: 19.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 344px;
+    height: 47px;
+    position: absolute;
+    right: 44px;
+    top: 41px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.19);
+    margin-left: 10px;
+}
+
+nav .Vector1{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 68px;
+    top: 47px;
+    background: url("Vector 1.png"), lightgray 50% / cover no-repeat; 
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.19);
+}
+
+.ellipse1{
+    width: 664px;
+    height: 190px;
+    flex-shrink: 0;
+    border-radius: 664px;
+    background: #1B93B9;
+    filter: blur(160px);
+    background: #1B93B9; box-shadow: 320px 320px 320px; border-radius: 9999px; 
+    filter: blur(320px);
+}
+
+.YourBestSeoAgency{
+    width: 609px;
+    height: 147px;
+    flex-shrink: 0;
+    margin-left: 25px;
+}
+
+.Best{
+    width: 683px;
+    height: 85px;
+    flex-shrink: 0;
+    margin-left: 25px;
+}
+
+.LesBasesDeFigma21{
+    width: 397px;
+    height: 418px;
+    flex-shrink: 0;
+    border: 700px;
+    border-top: 3458;
+    margin-left: 25px;
+}
+
+.start-and-info{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 34px;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.start{
+    width: 207px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 61px;
+    border: 1px solid #000;
+    background: #00B7F1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: Inter;
+    font-size: 19.3px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    cursor: pointer;
+}
+
+.info{
+    display: inline-flex;
+    width: 296px;
+    height: 63px;
+    padding: 20px 57px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 61px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 19.3px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    background: #151C21;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Over-and-Etoiles{
+    width: 800px;
+    height: 100px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin-left: 25px;
+}
+
+.Over{
+    width: 538px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Etoiles{
+    width: 236px;
+    height: 51px;
+    flex-shrink: 0;
+    padding-top: 30px;
+}
+
+.Rectangle3{
+    width: 236px;
+    height: 51px;
+    left: 0px;
+    top: 0px;
+    background-image: url("Etoiles.svg");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 44px;
+}
+
+.Rectangle5{
+    width: 558px;
+    height: 349px;
+    margin-left: 0;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #151C21 7.65%, rgba(21, 28, 33, 0.00) 99.71%);
+}
+
+.Rectangle6{
+    width: 558px;
+    height: 349px;
+    margin-left: 900px;
+    transform: rotate(-179.314deg);
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #151C21 7.65%, rgba(21, 28, 33, 0.00) 99.71%);
+
+}
+.Rectangle4{
+    width: 438px;
+    height: 272px;
+    margin: 10px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.13);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: auto;
+}
+
+.carousel {
+    width: 1200px;
+    overflow: auto;
+    white-space: wrap;
+}
+
+.carousel-content {
+    display: flex;
+    width: 408px;
+    padding-top: 100px;
+}
+
+.carousel div[class="Rectangle4"] {
+    width: 300px;
+    height: 300px;
+    animation: slide 20s 0.5s infinite;
+    /*position: relative;*/
+}
+
+.carousel-content div[class="Rectangle4"] {
+    margin-right: 30px; /* Espacement entre les images */
+}
+
+.carousel-content div[class="Rectangle4"]:last-child {
+    margin-right: 10px;
+}
+@keyframes slide {
+    0% { left: 0; }
+    20% { left: -100%; }
+    40% { left: -200%; }
+    60% { left: -300%; }
+    80% { left: -400%; }
+    100% { left: -500%; }
+    }
+
+img[class="photo"]{
+    width: 60px;
+    height: 63.377px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: url("unsplash_WNoLnJo7tS8 1.png"),lightgray 50% / cover no-repeat;
+    padding: 2px 2px 2px 2px;
+}
+
+p[class="username"]{
+    width: 204px;
+    height: 24px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14.3px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 2px 2px 2px 2px;
+}
+
+p[class="date-of-comment"]{
+    width: 311px;
+    height: 16.344px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    color: rgba(255, 255, 255, 0.42);
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 2px 2px 2px 2px;
+}
+
+p[class="comment"]{
+    width: 346px;
+    height: 94.958px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 2px 2px 2px 2px;
+}
+
+.middle-section{
+    width: 1250px;
+    font-family: Inter;
+    display: block;
+}
+
+.middle-section1{
+    width: 600px;
+    display: block;
+}
+
+.middle-blur1{
+    width: 664px;
+    height: 290px;
+    flex-shrink: 0;
+    border-radius: 664px;
+    background: #1B93B9;
+    filter: blur(160px);
+}
+
+.sub-middle{
+    display: inline-flex;
+}
+
+.middle-section-title{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0px;
+    margin-left: 25px;
+}
+
+.middle-section-text{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 25px;
+}
+
+.middle-photo-1{
+    width: 350px;
+    height: 407px;
+    flex-shrink: 0;
+    background: url("3 1 1.png"), lightgray 50% / cover no-repeat;
+    margin-left: 700px;
+    top: 2000px;
+}
+
+.middle-photo-2{
+    width: 300px;
+    top : 2600px;
+    height: 415px;
+    flex-shrink: 0;
+    background: url("2 1 1.png"), lightgray 50% / cover no-repeat;
+    margin-top: 150px;
+    margin-left: 25px;
+}
+
+.Rectangle7{
+    width: 1266px;
+    height: 254px;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0);
+}
+
+.middle-section2{
+    width: 450px;
+    height: 415px;
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 5px 14px;
+    list-style-type: none;
+}
+
+.sub-middle-2{
+    width: 600px;
+    height: 415px;
+    flex-shrink: 0;
+    display: block;
+    margin-left: 250px;
+}
+
+.middle-blur2{
+    width:364px;
+    height: 390px;
+    flex-shrink: 0;
+    border-radius: 664px;
+    background: rgba(27, 147, 185, 0.47);
+    filter: blur(160px);
+    margin-left: 700px;
+}
+
+.middle-bar{
+    width: 1266px;
+    height: 254px;
+    flex-shrink: 0; 
+}
+
+.middle-bar-menu{
+    display: flex;
+    font-size: 15px;
+    top: 35px;
+    background: rgba(0, 0, 0, 0.42);
+    text-align: center;
+}
+
+.middle-bar-menu li{
+    list-style-type: none;
+    padding: 10px 44px;
+}
+
+.middle-bar-menu li a{
+    text-decoration: none;
+}
+
+.middle-bar-menu li:hover{
+    color: #000;
+}
+
+.Google-logo{
+    width: 124px;
+    height: 77px;
+    flex-shrink: 0;
+    background: url("Google-logo.png") cover no-repeat;
+}
+
+
+.Tesla{
+    width: 147px;
+    height: 47px;
+    flex-shrink: 0;
+    background: url("Tesla.png"), light
+}
+
+.Amazon{
+    width: 186px;
+    height: 38px;
+    flex-shrink: 0;
+    background: url("Amazon.png"), cover no-repeat;
+}
+
+
+.Samsung{
+    width: 158px;
+    height: 28px;
+    flex-shrink: 0;
+    background: url("Samsung.png"), cover no-repeat;
+}
+
+.youtube{
+    width: 150px;
+    height: 35px;
+    flex-shrink: 0;
+    background: url("youtube.png"), cover no-repeat;  
+}
+
+.FAQ{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.FAQ-conntainer{
+
+}
+
+.Rectangle8{
+    width: 1128px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.20);
+    margin-left: 75px;
+}
+
+.question{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.Vector-Arrow{
+    width: 31px;
+    height: 35px;
+    flex-shrink: 0;
+    background: url("Vector-Arrow 1.png"), cover no-repeat;
+}
+
+.Rectangle9{
+    width: 1128px;
+    height: 258px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.20);
+    text-align: center;
+    margin-left: 75px;
+}
+
+.Rectangle9-Title{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Usually{
+    width: 1011px;
+    height: 133px;
+    flex-shrink: 0;
+    background: url("Usually.png"),cover no-repeat;
+}
+
+.Vector-Arrow-end{
+    width: 31px;
+    height: 35px;
+    transform: rotate(89.36deg);
+    flex-shrink: 0;
+    background: url("Vector-Arrow 1.png"), cover no-repeat;
+}
+
+.blur-footer{
+    width: 1200px;
+    height: 287px;
+    flex-shrink: 0;
+    border-radius: 1366px;
+    background: rgba(27, 147, 185, 0.50);
+    filter: blur(160px);    
+}
+
+.footer{
+    position: absolute;
+    width: 1266px;
+    color: #000;
+    background: #000;
+}
+
+.footer-logo{
+    width: 129px;
+    height: 26px;
+    flex-shrink: 0;
+    background: url("Logo 1.png"), cover no-repeat;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.Copyright{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16.3px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-menu{
+    display: flex;
+    font-size: 18px;
+    /*left: 400px;*/
+    top: 35px;
+    background: rgba(0, 0, 0, 0.42);
+}
+
+.footer-menu li{
+    list-style-type: none;
+    padding: 5px 14px;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Inter;
+    font-size: 16.3px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Why-choose-us{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16.3px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    margin-left: 200px;
+}
+
+.Our-team{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16.3px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 225px;
+}
+
+.Newsletter-img{
+    width: 307px;
+    height: 26px;
+    flex-shrink: 0;
+    background: url("Join our newsletter 1.png"), cover no-repeat;
+    margin-left: 250px;
+}
+
+.email{
+    width: 310px;
+    height: 47px;
+    flex-shrink: 0;
+    background: url("Frame 4 1.png"), cover no-repeat;
+    margin-left: 250px;
+}
