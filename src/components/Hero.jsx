@@ -1,14 +1,14 @@
 import React from 'react'
-import profilPic from '../assets/Moi.jpg'
+import profilPic from '../assets/Moi.png'
 
 function Hero() {
     return (
-        <div className="bg-base-100/50 backdrop-blur-sm rounded-xl p-8 my-10 w-[90%] mx-auto">
+        <div className="bg-base-100/50 -sm rounded-xl p-8 my-10 w-[90%] mx-auto">
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
                         src={profilPic}
-                        className="w-lg rounded-lg shadow-2xl"
+                        className="w-lg rounded-lg "
                     />
                     <div>
                         <h1 className="text-7xl font-bold">Salut toi!</h1>
