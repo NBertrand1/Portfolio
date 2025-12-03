@@ -6,8 +6,8 @@ import { ThemeProvider } from 'next-themes'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* Ajoute l'attribut attribute="class" pour que ça marche avec Tailwind */}
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+    {/* Ajoute l'attribut attribute="data-theme" pour que ça marche avec Tailwind */}
+    <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
       <App />
     </ThemeProvider>
   </StrictMode>,

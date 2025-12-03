@@ -2,7 +2,7 @@ import React from 'react'
 import { useTheme } from 'next-themes';
 
 function Navbar() {
-    const { theme, setTheme } = useTheme();
+    const { setTheme, resolvedTheme } = useTheme();
     return (
         <div className="navbar bg-neutral/25 backdrop-blur-md h-25 shadow-sm fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-5 rounded-2xl w-[90%]">
             <div className="navbar-start">
@@ -44,7 +44,13 @@ function Navbar() {
             <div className="navbar-end gap-4">
                 <label className="swap swap-rotate">
                     {/* this hidden checkbox controls the state */}
-                    <input type="checkbox" id="theme-controller" className="theme-controller" value="synthwave" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
+                    <input
+                        type="checkbox"
+                        className="theme-controller"
+                        value="synthwave"
+                        checked={resolvedTheme === 'dark'}
+                        onChange={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+                    />
 
                     {/* sun icon */}
                     <svg
