@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes';
 function Navbar() {
     const { theme, setTheme } = useTheme();
     return (
-        <div className="navbar bg-neutral/25 backdrop-blur-md h-25 shadow-sm fixed top-0 left-1/2 -translate-x-1/2 z-50 my-5 rounded-2xl w-[90%]">
+        <div className="navbar bg-neutral/25 backdrop-blur-md h-25 shadow-sm fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-5 rounded-2xl w-[90%]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

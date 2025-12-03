@@ -1,4 +1,5 @@
 import React from 'react'
+import profilPic from '../assets/Moi.jpg'
 
 function Hero() {
     return (
@@ -6,16 +7,21 @@ function Hero() {
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                        className="max-w-sm rounded-lg shadow-2xl"
+                        src={profilPic}
+                        className="w-lg rounded-lg shadow-2xl"
                     />
                     <div>
-                        <h1 className="text-5xl font-bold">Box Office News!</h1>
-                        <p className="py-6">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        <h1 className="text-7xl font-bold">Salut toi!</h1>
+                        <p className="py-6 mr-5">
+                            Je suis un développeur web passionné par la création d'interfaces utilisateur modernes et fonctionnelles.
+                            <br />
+                            Je suis disponible pour vous aider dans vos projets web.
+                            <br />
+                            Ici vous retrouverez les technologies avec lesquelles j'suis à l'aise et quelques projets réalisés.
+                            <br />
+                            Contactez-moi pour en savoir plus.
                         </p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <button className="btn btn-primary">Contactez-moi</button>
                     </div>
                 </div>
             </div>
