@@ -12,7 +12,7 @@ function Hero() {
                     />
                     <div>
                         <h1 className="text-7xl font-bold">Salut toi!</h1>
-                        <p className="py-6 mr-5">
+                        <p className="py-10 mr-5">
                             Je suis un développeur web passionné par la création d'interfaces utilisateur modernes et fonctionnelles.
                             <br />
                             Je suis disponible pour vous aider dans vos projets web.
