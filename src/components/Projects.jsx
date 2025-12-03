@@ -7,40 +7,26 @@ function Projects() {
             title: "Xsmall Card",
             description: "A card component has a figure, a body part, and inside body there are title and actions parts",
             image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
-            size: "card-xs"
+            size: "card-xl"
         },
         {
             id: 2,
             title: "Small Card",
             description: "A card component has a figure, a body part, and inside body there are title and actions parts",
             image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
-            size: "card-sm"
+            size: "card-xl"
         },
         {
             id: 3,
             title: "Medium Card",
             description: "A card component has a figure, a body part, and inside body there are title and actions parts",
             image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
-            size: "card-md"
-        },
-        {
-            id: 4,
-            title: "Large Card",
-            description: "A card component has a figure, a body part, and inside body there are title and actions parts",
-            image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
-            size: "card-lg"
-        },
-        {
-            id: 5,
-            title: "Xlarge Card",
-            description: "A card component has a figure, a body part, and inside body there are title and actions parts",
-            image: "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
             size: "card-xl"
-        }
+        },
     ];
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="bg-base-100/50 backdrop-blur-sm rounded-xl p-8 my-10 w-[90%] mx-auto container">
             <h2 className="text-3xl font-bold text-center mb-8">My Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
                 {projectsData.map((project) => (

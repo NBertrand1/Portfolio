@@ -2,8 +2,8 @@ import React from 'react'
 
 function Hero() {
     return (
-        <div>
-            <div className="hero bg-base-200 min-h-screen">
+        <div className="bg-base-100/50 backdrop-blur-sm rounded-xl p-8 my-10 w-[90%] mx-auto">
+            <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
                         src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
