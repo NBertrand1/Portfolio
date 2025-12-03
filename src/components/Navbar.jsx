@@ -41,7 +41,7 @@ function Navbar() {
                     <li><a>Item 3</a></li>
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end gap-4">
                 <label className="swap swap-rotate">
                     {/* this hidden checkbox controls the state */}
                     <input type="checkbox" id="theme-controller" className="theme-controller" value="synthwave" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
