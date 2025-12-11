@@ -15,10 +15,15 @@ function Skills() {
     ];
 
     return (
-        <div className="bg-base-100/50 backdrop-blur-sm rounded-xl p-8 my-10 w-[90%] mx-auto">
+        <div id='skills' className="bg-base-100/50 backdrop-blur-sm rounded-xl p-8 w-[90%] mx-auto">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-8">My Skills</h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
+                <h2 className="text-5xl font-bold text-center mb-18">Mon stack technologique</h2>
+                <p className='text-center text-xl m-8 mb-18 font-bold text-gray-500'>
+                    Comme tout developeur en quête d'experience, il est nécessaire de participer et même de construire des solutions innovante
+                    qui apportent une plus-value à notre quotidien. Dans mon cas, j'ai participé à ces différents projets pour allier théorie et pratiques.
+                    Vous retrouverez des boutons renvoyant vers des demo de ces differents projets.
+                </p>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center my-8">
                     {skills.map((skill, index) => (
                         <div key={index} className="flex flex-col items-center p-4 bg-base-100 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 w-32 h-32 justify-center">
                             <div className="text-5xl mb-2">

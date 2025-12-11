@@ -29,7 +29,7 @@ function Testimonies() {
     ];
 
     return (
-        <div className="flex flex-col items-center w-[90%] mx-auto py-10 gap-4 bg-base-100/50 backdrop-blur-sm rounded-xl my-10">
+        <div id='testimonies' className="flex flex-col items-center w-[90%] mx-auto py-10 gap-4 bg-base-100/50 backdrop-blur-sm rounded-xl my-10">
             <h2 className="text-3xl font-bold text-center mb-8">Témoignages</h2>
             <div className="carousel w-full">
                 {testimoniesData.map((testimony) => (
