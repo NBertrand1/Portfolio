@@ -8,6 +8,7 @@ function Hero() {
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
                         src={profilPic}
+                        alt="Portrait de Beker_Dev"
                         className="w-lg rounded-lg -bg-conic-120 hidden lg:flex"
                     />
                     <div>

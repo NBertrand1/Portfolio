@@ -42,6 +42,7 @@ function Navbar() {
                         type="checkbox"
                         className="theme-controller"
                         value="synthwave"
+                        aria-label="Changer le thème"
                         checked={resolvedTheme === 'dark'}
                         onChange={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
                     />

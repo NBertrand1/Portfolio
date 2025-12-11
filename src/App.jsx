@@ -1,24 +1,29 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import Hero from './components/Hero'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import ParticlesBackground from './components/ParticlesBackground'
-import Testimonies from './components/Testimonies'
+
+const Projects = lazy(() => import('./components/Projects'));
+const Skills = lazy(() => import('./components/Skills'));
+const ParticlesBackground = lazy(() => import('./components/ParticlesBackground'));
+const Testimonies = lazy(() => import('./components/Testimonies'));
+const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
 
   return (
     <>
-      <ParticlesBackground />
+      <Suspense fallback={null}>
+        <ParticlesBackground />
+      </Suspense>
       <div className="min-h-screen space-y-8">
         <Navbar />
         <Hero />
-        <Skills />
-        <Projects />
-        <Testimonies />
-        <Footer />
+        <Suspense fallback={<div className="flex justify-center items-center py-20"><span className="loading loading-spinner loading-lg"></span></div>}>
+          <Skills />
+          <Projects />
+          <Testimonies />
+          <Footer />
+        </Suspense>
       </div>
     </>
   )

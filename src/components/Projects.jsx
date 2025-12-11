@@ -33,11 +33,11 @@ function Projects() {
                     Comme tout developeur en quête d'experience, il est nécessaire de participer et même de construire des solutions innovante
                     qui apportent une plus-value à notre quotidien. Dans mon cas, j'ai participé à ces différents projets pour allier théorie et pratiques.
                     Vous retrouverez des boutons renvoyant vers des demo de ces differents projets.
-                </p>
+                    </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
                     {projectsData.map((project) => (
-                        <div key={project.id} className={`card bg-base-100/50 backdrop-blur-sm  shadow-xl w-full max-w-sm ${project.size}`}>
+                        <div key={project.id} className={`card bg-gray-900 backdrop-blur-sm  shadow w-full max-w-sm ${project.size}`}>
                             <figure>
                                 <img src={project.image} alt={project.title} />
                             </figure>
