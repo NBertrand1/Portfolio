@@ -10,6 +10,9 @@ function Hero() {
                         src={profilPic}
                         alt="Portrait de Beker_Dev"
                         className="w-lg rounded-lg -bg-conic-120 hidden lg:flex"
+                        width="512"
+                        height="512"
+                        fetchPriority="high"
                     />
                     <div>
                         <h1 className="text-7xl font-bold">Salut toi !</h1>

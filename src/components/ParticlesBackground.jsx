@@ -17,7 +17,7 @@ const ParticlesBackground = () => {
                         value: "transparent",
                     },
                 },
-                fpsLimit: 120,
+                fpsLimit: 60,
                 interactivity: {
                     events: {
                         onClick: {
@@ -66,7 +66,7 @@ const ParticlesBackground = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 40,
                     },
                     opacity: {
                         value: 0.5,
@@ -78,7 +78,7 @@ const ParticlesBackground = () => {
                         value: { min: 1, max: 5 },
                     },
                 },
-                detectRetina: true,
+                detectRetina: false,
             }}
             style={{
                 position: "fixed",
