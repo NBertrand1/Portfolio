@@ -1,5 +1,13 @@
 import React from 'react';
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiExpress, SiMysql, SiMongodb, SiJsonwebtokens, SiPhp } from 'react-icons/si';
+import { SiHtml5 } from '@react-icons/all-files/si/SiHtml5';
+import { SiCss3 } from '@react-icons/all-files/si/SiCss3';
+import { SiJavascript } from '@react-icons/all-files/si/SiJavascript';
+import { SiReact } from '@react-icons/all-files/si/SiReact';
+import { SiExpress } from '@react-icons/all-files/si/SiExpress';
+import { SiMysql } from '@react-icons/all-files/si/SiMysql';
+import { SiMongodb } from '@react-icons/all-files/si/SiMongodb';
+import { SiJsonwebtokens } from '@react-icons/all-files/si/SiJsonwebtokens';
+import { SiPhp } from '@react-icons/all-files/si/SiPhp';
 
 function Skills() {
     const skills = [
