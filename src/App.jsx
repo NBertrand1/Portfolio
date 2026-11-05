@@ -22,9 +22,9 @@ const projects = [
   {
     title: 'Mediatheque',
     category: 'Projet pédagogique',
-    description: 'Bibliothèque numérique qui organise les matières enseignées et leurs supports PDF afin d’aider les étudiants à retrouver leurs cours.',
-    details: 'Le dépôt et son code seront documentés plus précisément après un audit technique complet.',
-    stack: ['Projet web'],
+    description: 'Application PHP/MySQL qui classe des ressources PDF par matière et propose des pages de catégories ainsi que des parcours de connexion et d’inscription.',
+    details: 'Prototype fonctionnel à auditer avant production : configuration des identifiants et gestion des sessions à renforcer.',
+    stack: ['PHP', 'MySQL', 'PDO', 'HTML', 'CSS'],
     url: 'https://github.com/NBertrand1/Mediatheque',
     featured: true,
   },
@@ -72,7 +72,7 @@ const content = {
     skillsIntro: 'Des technologies mobilisées dans mes projets et des sujets que je travaille actuellement.',
     skillsGroups: [
       { title: 'Frontend', items: ['JavaScript', 'React', 'HTML', 'CSS', 'TypeScript — apprentissage'] },
-      { title: 'Backend & données', items: ['Node.js', 'ExpressJS', 'MySQL', 'JWT', 'Multer', 'NestJS — apprentissage'] },
+      { title: 'Backend & données', items: ['Node.js', 'ExpressJS', 'PHP', 'MySQL', 'JWT', 'Multer', 'NestJS — apprentissage'] },
       { title: 'Outils & pratiques', items: ['Git', 'GitHub', 'Vite', 'Conception UI', 'Analyse fonctionnelle', 'DevOps — apprentissage'] },
     ],
     projectsTitle: 'Projets sélectionnés',
