@@ -81,6 +81,7 @@ const content = {
     contactTitle: 'Échangeons',
     contactText: 'Vous avez une opportunité junior, un projet web ou souhaitez discuter de développement logiciel ? Vous pouvez me contacter par e-mail ou consulter mes dépôts.',
     email: 'M’écrire',
+    cv: 'Télécharger mon CV',
     github: 'Mon GitHub',
     footer: 'Conçu et développé progressivement par Beker.',
     status: 'Portfolio en évolution',
@@ -111,6 +112,7 @@ const content = {
     contactTitle: 'Let’s connect',
     contactText: 'Have a junior opportunity, a web project, or want to discuss software development? Reach me by email or explore my repositories.',
     email: 'Send an email',
+    cv: 'Download my CV',
     github: 'My GitHub',
     footer: 'Designed and progressively built by Beker.',
     status: 'Portfolio in progress',
@@ -195,6 +197,7 @@ function App() {
             <a className="button button-primary" href="mailto:eloumounarcisse@gmail.com">{t.email}<span aria-hidden="true">↗</span></a>
             <a className="button button-secondary" href="https://github.com/NBertrand1" target="_blank" rel="noreferrer">{t.github}<span aria-hidden="true">↗</span></a>
             <a className="button button-secondary" href="https://www.linkedin.com/in/tang-eloumou-narcisse-bertrand-133331249/" target="_blank" rel="noreferrer">LinkedIn<span aria-hidden="true">↗</span></a>
+            <a className="button button-secondary" href="/CV_Narcisse_Bertrand_Tang_Eloumou_FR.pdf" download>{t.cv}<span aria-hidden="true">↓</span></a>
           </div>
           <p className="email-line">eloumounarcisse@gmail.com</p>
         </section>
