@@ -6,56 +6,78 @@
 
 ## Français
 
-Bienvenue sur le dépôt de mon portfolio personnel.
+Portfolio personnel bilingue présentant mon parcours, mes compétences, mes projets et mes moyens de contact.
 
-Je suis diplômé en informatique et génie logiciel (Bac+3, 2025), et je construis progressivement mon parcours de développeur web. Mon objectif est de concevoir des applications utiles, de comprendre les choix techniques et de produire un code que je peux expliquer, maintenir et faire évoluer.
+Je suis diplômé en informatique et génie logiciel (Bac+3, 2025, IAI). Je construis mon parcours de développeur web à travers des projets concrets, l'apprentissage continu et une attention particulière à la logique métier et à la qualité du code.
 
-### Compétences et environnement
+### Contenu du portfolio
 
-- **Frontend :** JavaScript, React, notions de TypeScript
-- **Backend :** Node.js, ExpressJS, notions de NestJS
-- **Données :** MySQL
-- **Authentification et fichiers :** JWT, Multer
-- **Outils :** Git, GitHub, Vite
+- Présentation personnelle et approche de travail
+- Compétences et technologies utilisées ou actuellement étudiées
+- Réalisations avec liens directs vers les dépôts GitHub
+- Contact par e-mail
+- Interface responsive avec bascule français / anglais
 
-Les technologies listées reflètent mes réalisations et mon apprentissage. Elles ne signifient pas toutes le même niveau de maîtrise.
-
-### Réalisations sélectionnées
+### Projets présentés
 
 | Projet | Description |
 |---|---|
 | [Gestion des projets urbains — CUY](https://github.com/NBertrand1/Gest-Proj-Urb-CUY) | Application de gestion de projets, tâches, affectations, échéances et tableau de bord. |
-| [MyTaxApp](https://github.com/NBertrand1/MyTaxApp) | Projet de conception d'une plateforme fiscale ; périmètre fonctionnel et interfaces frontend. |
-| [Mediatheque](https://github.com/NBertrand1/Mediatheque) | Bibliothèque numérique de supports de cours PDF classés par matière. |
-| [Todo App React](https://github.com/NBertrand1/todo-app-react) | Projet React d'apprentissage, à faire évoluer. |
+| [MyTaxApp](https://github.com/NBertrand1/MyTaxApp) | Projet de conception d'une plateforme fiscale ; interfaces frontend, non opérationnelle. |
+| [Mediatheque](https://github.com/NBertrand1/Mediatheque) | Bibliothèque de supports de cours PDF classés par matière. |
+| [Todo App React](https://github.com/NBertrand1/todo-app-react) | Application de tâches avec persistance locale, recherche et édition. |
 | [Morning JS](https://github.com/NBertrand1/Morning-js) | Exercices et apprentissage des fondamentaux JavaScript. |
-| [Ma-biblio](https://github.com/NBertrand1/Ma-biblio) | Projet personnel en cours de qualification. |
-| [Vintage-form](https://github.com/NBertrand1/Vintage-form) | Projet frontend en cours d'amélioration. |
+
+### Technologies
+
+React, JavaScript, Node.js, ExpressJS, MySQL, JWT, Git, GitHub et Vite. TypeScript, NestJS et DevOps font partie de mon apprentissage en cours.
+
+### Lancer le projet
+
+```bash
+npm install
+npm run dev
+```
+
+Créer le build de production :
+
+```bash
+npm run build
+npm run preview
+```
 
 ### Contact
 
-- Email : eloumounarcisse@gmail.com
+- E-mail : eloumounarcisse@gmail.com
 - GitHub : [@NBertrand1](https://github.com/NBertrand1)
 
 ## English
 
-Welcome to my personal portfolio repository.
+This is my bilingual personal portfolio, showcasing my background, skills, projects, and contact information.
 
-I hold a Bachelor's degree in Computer Science and Software Engineering (2025) and am progressively building my career as a web developer. I aim to build useful applications, understand technical decisions, and write code I can explain, maintain, and improve.
+I hold a Bachelor's degree in Computer Science and Software Engineering (2025, IAI). I am building my web development career through practical projects, continuous learning, and a focus on business logic and code quality.
 
-### Skills and tools
+### Portfolio sections
 
-- **Frontend:** JavaScript, React, TypeScript fundamentals
-- **Backend:** Node.js, ExpressJS, NestJS fundamentals
-- **Database:** MySQL
-- **Authentication and uploads:** JWT, Multer
-- **Tools:** Git, GitHub, Vite
+- Personal introduction and working approach
+- Skills and technologies used or currently being learned
+- Selected projects with direct GitHub links
+- Email contact
+- Responsive interface with French / English language switch
 
-This list reflects my projects and ongoing learning; it does not imply equal proficiency in every technology.
+### Run locally
 
-### Selected work
+```bash
+npm install
+npm run dev
+```
 
-See the project links in the French section above for descriptions of my work.
+Build and preview:
+
+```bash
+npm run build
+npm run preview
+```
 
 ### Contact
 
@@ -64,4 +86,4 @@ See the project links in the French section above for descriptions of my work.
 
 ---
 
-**Portfolio status:** This repository currently contains a starter template. The personal portfolio website is being developed progressively; this README does not claim that the website is complete.
+**Status:** First personal portfolio version prepared for review. The source code should be linted, built, and browser-tested before deployment.
