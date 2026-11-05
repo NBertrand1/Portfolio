@@ -4,9 +4,9 @@ const projects = [
   {
     title: 'Gestion des projets urbains — CUY',
     category: 'Application web · Stage',
-    description: 'Application de gestion de projets urbains avec suivi des tâches, affectation des utilisateurs, échéances et tableau de bord.',
-    details: 'Développement réalisé individuellement sous l’encadrement du chef de la cellule informatique.',
-    stack: ['React', 'ExpressJS', 'MySQL', 'JWT', 'Multer'],
+    description: 'Interface de présentation React/Vite réalisée dans le cadre d’un projet de stage à la Communauté Urbaine de Yaoundé.',
+    details: 'Le dépôt public actuel expose une interface de présentation ; le backend et les modules métier annoncés ne sont pas vérifiables dans le code disponible.',
+    stack: ['React', 'Vite'],
     url: 'https://github.com/NBertrand1/Gest-Proj-Urb-CUY',
     featured: true,
   },
@@ -65,14 +65,14 @@ const content = {
     secondary: 'Me contacter',
     location: 'Yaoundé, Cameroun · Ouvert aux opportunités junior',
     profileTitle: 'À propos',
-    profileText: 'Titulaire d’une Licence en informatique et génie logiciel obtenue en 2025 à l’IAI, je construis mon parcours professionnel à travers des projets concrets, l’apprentissage continu et la pratique. Mon expérience de stage à la Communauté Urbaine de Yaoundé m’a permis de développer seul une application de gestion de projets, sous encadrement informatique.',
+    profileText: 'Titulaire d’une Licence en informatique et génie logiciel obtenue en 2025 à l’IAI, je construis mon parcours professionnel à travers des projets concrets, l’apprentissage continu et la pratique. Dans le cadre de mon stage à la Communauté Urbaine de Yaoundé, j’ai travaillé sur une interface React/Vite de présentation d’un projet de gestion urbaine. Le dépôt public actuel ne contient pas de backend complet vérifiable.',
     approachTitle: 'Ma façon de travailler',
     approachText: 'Je privilégie les bases solides : analyser le besoin, comprendre la logique métier, structurer une solution, puis vérifier et améliorer le code. Je veux être capable d’expliquer ce que je construis, y compris lorsque j’utilise des outils d’IA.',
     skillsTitle: 'Technologies & apprentissage',
     skillsIntro: 'Des technologies mobilisées dans mes projets et des sujets que je travaille actuellement.',
     skillsGroups: [
       { title: 'Frontend', items: ['JavaScript', 'React', 'HTML', 'CSS', 'TypeScript — apprentissage'] },
-      { title: 'Backend & données', items: ['Node.js', 'ExpressJS', 'PHP', 'MySQL', 'JWT', 'Multer', 'NestJS — apprentissage'] },
+      { title: 'Backend & données', items: ['Node.js', 'ExpressJS', 'PHP', 'MySQL', 'NestJS — apprentissage'] },
       { title: 'Outils & pratiques', items: ['Git', 'GitHub', 'Vite', 'Conception UI', 'Analyse fonctionnelle', 'DevOps — apprentissage'] },
     ],
     projectsTitle: 'Projets sélectionnés',
@@ -95,14 +95,14 @@ const content = {
     secondary: 'Get in touch',
     location: 'Yaoundé, Cameroon · Open to junior opportunities',
     profileTitle: 'About me',
-    profileText: 'I hold a Bachelor’s degree in Computer Science and Software Engineering, obtained in 2025 at IAI. I am building my professional path through practical projects, continuous learning, and hands-on practice. During my internship at the Yaoundé City Council, I independently developed a project management application under IT supervision.',
+    profileText: 'I hold a Bachelor’s degree in Computer Science and Software Engineering, obtained in 2025 at IAI. I am building my professional path through practical projects, continuous learning, and hands-on practice. During my internship at the Yaoundé City Council, I worked on a React/Vite presentation interface for an urban project. The current public repository does not contain a verifiable complete backend.',
     approachTitle: 'How I work',
     approachText: 'I value strong fundamentals: understand the need, clarify business logic, structure a solution, then review and improve the code. I want to be able to explain what I build, including when I use AI tools.',
     skillsTitle: 'Technologies & learning',
     skillsIntro: 'Technologies used in my projects and topics I am currently learning.',
     skillsGroups: [
       { title: 'Frontend', items: ['JavaScript', 'React', 'HTML', 'CSS', 'TypeScript — learning'] },
-      { title: 'Backend & data', items: ['Node.js', 'ExpressJS', 'MySQL', 'JWT', 'Multer', 'NestJS — learning'] },
+      { title: 'Backend & data', items: ['Node.js', 'ExpressJS', 'MySQL', 'NestJS — learning'] },
       { title: 'Tools & practices', items: ['Git', 'GitHub', 'Vite', 'UI design', 'Requirements analysis', 'DevOps — learning'] },
     ],
     projectsTitle: 'Selected projects',
@@ -194,6 +194,7 @@ function App() {
           <div className="contact-actions">
             <a className="button button-primary" href="mailto:eloumounarcisse@gmail.com">{t.email}<span aria-hidden="true">↗</span></a>
             <a className="button button-secondary" href="https://github.com/NBertrand1" target="_blank" rel="noreferrer">{t.github}<span aria-hidden="true">↗</span></a>
+            <a className="button button-secondary" href="https://www.linkedin.com/in/tang-eloumou-narcisse-bertrand-133331249/" target="_blank" rel="noreferrer">LinkedIn<span aria-hidden="true">↗</span></a>
           </div>
           <p className="email-line">eloumounarcisse@gmail.com</p>
         </section>
