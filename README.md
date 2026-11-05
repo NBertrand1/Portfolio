@@ -26,7 +26,7 @@ Je suis diplômé en informatique et génie logiciel (Bac+3, 2025, IAI). Je cons
 | [MyTaxApp](https://github.com/NBertrand1/MyTaxApp) | Projet de conception d'une plateforme fiscale ; interfaces frontend, non opérationnelle. |
 | [Mediatheque](https://github.com/NBertrand1/Mediatheque) | Bibliothèque de supports de cours PDF classés par matière. |
 | [Todo App React](https://github.com/NBertrand1/todo-app-react) | Application de tâches avec persistance locale, recherche et édition. |
-| [Morning JS](https://github.com/NBertrand1/Morning-js) | Exercices et apprentissage des fondamentaux JavaScript. |
+| [Morning JS](https://github.com/NBertrand1/Morning-js) | Exercices et apprentissage des fondamentaux JavaScript. |\n| [Vintage-form](https://github.com/NBertrand1/Vintage-form) | Projet frontend personnel en cours d'amélioration. |
 
 ### Technologies
 
