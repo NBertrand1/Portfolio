@@ -45,12 +45,12 @@ const projects = [
     url: 'https://github.com/NBertrand1/Morning-js',
   },
   {
-    title: 'Ma-biblio & Vintage-form',
-    category: 'Projets personnels',
-    description: 'Deux dépôts personnels à auditer et faire évoluer progressivement vers des applications documentées et fonctionnelles.',
+    title: 'Vintage-form',
+    category: 'Projet frontend',
+    description: 'Projet frontend personnel à auditer et à faire évoluer vers une expérience de formulaire complète.',
     details: 'Les fonctionnalités et technologies seront précisées après inspection du code.',
     stack: ['Audit à compléter'],
-    url: 'https://github.com/NBertrand1',
+    url: 'https://github.com/NBertrand1/Vintage-form',
   },
 ]
 
