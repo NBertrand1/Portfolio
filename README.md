@@ -51,7 +51,7 @@ npm run preview
 
 - E-mail : eloumounarcisse@gmail.com
 - GitHub : [@NBertrand1](https://github.com/NBertrand1)
-- LinkedIn : [Profil professionnel](https://www.linkedin.com/in/tang-eloumou-narcisse-bertrand-133331249/)
+- LinkedIn : [Profil professionnel](https://www.linkedin.com/in/tang-eloumou-narcisse-bertrand/)
 
 ## English
 
@@ -80,7 +80,7 @@ npm run preview
 
 - Email: eloumounarcisse@gmail.com
 - GitHub: [@NBertrand1](https://github.com/NBertrand1)
-- LinkedIn: [Professional profile](https://www.linkedin.com/in/tang-eloumou-narcisse-bertrand-133331249/)
+- LinkedIn: [Professional profile](https://www.linkedin.com/in/tang-eloumou-narcisse-bertrand/)
 
 ---
 
