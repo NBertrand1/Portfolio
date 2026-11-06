@@ -3,9 +3,9 @@ import { useState } from 'react'
 const projects = [
   {
     title: 'Gestion des projets urbains — CUY',
-    category: 'Application web · Stage',
-    description: 'Interface de présentation React/Vite réalisée dans le cadre d’un projet de stage à la Communauté Urbaine de Yaoundé.',
-    details: 'Le dépôt public actuel expose une interface de présentation ; le backend et les modules métier annoncés ne sont pas vérifiables dans le code disponible.',
+    category: 'Stage · Développement frontend',
+    description: 'Contribution frontend réalisée pendant mon stage à la Communauté Urbaine de Yaoundé, sur l’interface React/Vite du projet.',
+    details: 'Périmètre vérifiable : interface frontend React/Vite. Le backend et les intégrations de données ne sont pas revendiqués, faute de code public permettant de les vérifier.',
     stack: ['React', 'Vite'],
     url: 'https://github.com/NBertrand1/Gest-Proj-Urb-CUY',
     featured: true,
@@ -194,7 +194,7 @@ function App() {
           <div className="contact-actions">
             <a className="button button-primary" href="mailto:eloumounarcisse@gmail.com">{t.email}<span aria-hidden="true">↗</span></a>
             <a className="button button-secondary" href="https://github.com/NBertrand1" target="_blank" rel="noreferrer">{t.github}<span aria-hidden="true">↗</span></a>
-            <a className="button button-secondary" href="https://www.linkedin.com/in/tang-eloumou-narcisse-bertrand-133331249/" target="_blank" rel="noreferrer">LinkedIn<span aria-hidden="true">↗</span></a>
+            <a className="button button-secondary" href="https://www.linkedin.com/in/tang-eloumou-narcisse-bertrand/" target="_blank" rel="noreferrer">LinkedIn<span aria-hidden="true">↗</span></a>
           </div>
           <p className="email-line">eloumounarcisse@gmail.com</p>
         </section>
