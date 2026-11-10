@@ -1,0 +1,250 @@
+import {
+  CuyPreview,
+  MyTaxAppPreview,
+  MediathequePreview,
+  TodoAppPreview,
+  MorningJsPreview,
+  VintageFormPreview,
+} from '../components/ProjectPreviews'
+
+export const projects = [
+  {
+    id: 'cuy',
+    title: 'Gestion des projets urbains — CUY',
+    category: {
+      fr: 'Application web · Stage',
+      en: 'Web application · Internship',
+    },
+    clue: {
+      fr: 'Plateforme collaborative d’équipe (5–10 pers.) · Suivi opérationnel & planification',
+      en: 'Collaborative team platform (5–10 users) · Operational tracking & planning',
+    },
+    keywords: {
+      fr: ['Suivi des jalons', 'Attribution des tâches', 'Méthode Agile / Scrum', 'Tableau de bord interactif', 'Collaboration d’équipe'],
+      en: ['Milestone tracking', 'Task assignment', 'Agile / Scrum method', 'Interactive dashboard', 'Team collaboration'],
+    },
+    description: {
+      fr: 'Application de gestion de projets urbains avec suivi des tâches, affectation des collaborateurs, échéances et tableau de bord centralisé.',
+      en: 'Urban project management platform featuring task tracking, team member assignments, deadlines, and a centralized dashboard.',
+    },
+    details: {
+      fr: 'Développement réalisé individuellement sous l’encadrement du chef de la cellule informatique de la Communauté Urbaine de Yaoundé.',
+      en: 'Independently developed under the supervision of the head of the IT department at the Yaoundé City Council.',
+    },
+    stack: ['React', 'ExpressJS', 'MySQL', 'JWT', 'Multer'],
+    url: 'https://github.com/NBertrand1/Gest-Proj-Urb-CUY',
+    featured: true,
+    Preview: CuyPreview,
+  },
+  {
+    id: 'mytaxapp',
+    title: 'MyTaxApp',
+    category: {
+      fr: 'Conception · Frontend',
+      en: 'Design · Frontend',
+    },
+    clue: {
+      fr: 'Modernisation fiscale des services publics · Simulation, télépaiement & reçus',
+      en: 'Public sector tax modernization · Simulation, e-payment & receipts',
+    },
+    keywords: {
+      fr: ['Calcul d’impôts', 'Suivi des paiements', 'Registre des contribuables', 'Génération de reçus', 'Modernisation fiscale'],
+      en: ['Tax calculation', 'Payment tracking', 'Taxpayer registry', 'Receipt generation', 'Fiscal modernization'],
+    },
+    description: {
+      fr: 'Conception d’une plateforme de services fiscaux : consultation et calcul des taxes, suivi des paiements, gestion des contribuables et émission de reçus.',
+      en: 'Design of a tax management platform: tax consultation & calculation, payment tracking, taxpayer registry, and digital receipt generation.',
+    },
+    details: {
+      fr: 'Projet de conception et de maquettage frontend avec composants ergonomiques adaptés aux réalités de l’administration publique.',
+      en: 'Frontend design and prototyping project featuring accessible UI components tailored for public administration workflows.',
+    },
+    stack: ['React', 'Vite', 'Material UI', 'Tailwind CSS'],
+    url: 'https://github.com/NBertrand1/MyTaxApp',
+    featured: true,
+    Preview: MyTaxAppPreview,
+  },
+  {
+    id: 'mediatheque',
+    title: 'Mediatheque',
+    category: {
+      fr: 'Projet académique',
+      en: 'Academic project',
+    },
+    clue: {
+      fr: 'Médiathèque numérique universitaire · Distribution structurée de supports de cours',
+      en: 'Digital university library · Structured course materials distribution',
+    },
+    keywords: {
+      fr: ['Gestion documentaire PDF', 'Classement thématique', 'Portail étudiant', 'Authentification sécurisée', 'Base relationnelle'],
+      en: ['PDF document management', 'Subject classification', 'Student portal', 'Secure authentication', 'Relational database'],
+    },
+    description: {
+      fr: 'Application PHP/MySQL qui classe des ressources académiques PDF par matière et propose des parcours de consultation, d’inscription et de connexion.',
+      en: 'PHP/MySQL digital library organizing academic PDF resources by subject, with dedicated student browse, registration, and login flows.',
+    },
+    details: {
+      fr: 'Prototype fonctionnel modélisant la structure des données documentaires et les droits d’accès utilisateurs.',
+      en: 'Functional prototype modeling course document schemas and user access controls.',
+    },
+    stack: ['PHP', 'MySQL', 'PDO', 'HTML5', 'CSS3'],
+    url: 'https://github.com/NBertrand1/Mediatheque',
+    featured: true,
+    Preview: MediathequePreview,
+  },
+  {
+    id: 'todo-app',
+    title: 'Todo App React',
+    category: {
+      fr: 'Application utilitaire',
+      en: 'Utility application',
+    },
+    clue: {
+      fr: 'Gestionnaire de productivité personnelle · Zéro dépendance serveur, 100% réactif',
+      en: 'Personal productivity manager · Zero server dependency, 100% reactive',
+    },
+    keywords: {
+      fr: ['Gestion d’état réactive', 'Niveaux de priorité', 'Persistance LocalStorage', 'Filtrage & recherche dynamique', 'Mode sombre'],
+      en: ['Reactive state management', 'Priority levels', 'LocalStorage persistence', 'Dynamic search & filters', 'Dark mode'],
+    },
+    description: {
+      fr: 'Application de productivité personnelle avec ajout, modification, suppression, recherche instantanée, priorisation et sauvegarde locale.',
+      en: 'Personal task manager with instant search, priority tagging, status toggles, and offline local browser storage.',
+    },
+    details: {
+      fr: 'Architecture de composants React épurée, gestion d’état prévisible et persistance automatique.',
+      en: 'Clean React component architecture, predictable state updates, and automated local persistence.',
+    },
+    stack: ['React', 'Vite', 'LocalStorage', 'Tailwind CSS'],
+    url: 'https://github.com/NBertrand1/todo-app-react',
+    Preview: TodoAppPreview,
+  },
+  {
+    id: 'morning-js',
+    title: 'Morning JS',
+    category: {
+      fr: 'Laboratoire d’apprentissage',
+      en: 'Learning laboratory',
+    },
+    clue: {
+      fr: 'Banque de mini-projets JS · Pratique quotidienne des API et manipulation du DOM',
+      en: 'JavaScript mini-project lab · Daily hands-on practice with DOM and web APIs',
+    },
+    keywords: {
+      fr: ['Manipulation du DOM', 'JavaScript ES6+', 'Appels API REST asynchrones', 'Gestion des événements', '12+ mini-projets'],
+      en: ['DOM manipulation', 'JavaScript ES6+', 'Async REST API calls', 'Event handling', '12+ mini-apps'],
+    },
+    description: {
+      fr: 'Collection d’exercices et de mini-applications conçus pour maîtriser les fondamentaux JavaScript et l’asynchronisme.',
+      en: 'Curated collection of practical mini-applications designed to master JavaScript fundamentals and asynchronous patterns.',
+    },
+    details: {
+      fr: 'Comprend : météo en direct, toast notifications, crypto tracker, convertisseur et analyseur GitHub.',
+      en: 'Features: live weather widget, custom toast notifications, crypto tracker, currency converter, and GitHub profile analyzer.',
+    },
+    stack: ['JavaScript ES6+', 'HTML5', 'Fetch API', 'CSS3'],
+    url: 'https://github.com/NBertrand1/Morning-js',
+    Preview: MorningJsPreview,
+  },
+  {
+    id: 'vintage-form',
+    title: 'Vintage-form',
+    category: {
+      fr: 'Expérience UI / UX',
+      en: 'UI / UX Experience',
+    },
+    clue: {
+      fr: 'Composant d’authentification ergonomique · Accessibilité, validation & transitions',
+      en: 'Ergonomic authentication component · Accessibility, validation & smooth transitions',
+    },
+    keywords: {
+      fr: ['Bascule dynamique Connexion/Inscription', 'Validation HTML5 native', 'Accessibilité (A11y)', 'Design adaptatif', 'Micro-interactions'],
+      en: ['Dynamic Login/Register toggle', 'Native HTML5 validation', 'A11y accessibility', 'Responsive layout', 'Micro-interactions'],
+    },
+    description: {
+      fr: 'Démonstrateur d’interfaces de formulaires avec bascule fluide entre connexion et création de compte, retours visuels immédiats et respect des standards A11y.',
+      en: 'Interactive authentication form showcase with smooth mode switching, immediate visual feedback, and strict adherence to A11y standards.',
+    },
+    details: {
+      fr: 'Conception orientée utilisateur : labels accessibles, états de focus soignés et disposition adaptée aux mobiles.',
+      en: 'User-centric design with accessible field labeling, polished focus rings, and mobile-friendly touch targets.',
+    },
+    stack: ['HTML5', 'CSS3', 'JavaScript'],
+    url: 'https://github.com/NBertrand1/Vintage-form',
+    Preview: VintageFormPreview,
+  },
+]
+
+export const content = {
+  fr: {
+    nav: ['Accueil', 'Profil', 'Compétences', 'Projets', 'Contact'],
+    eyebrow: 'DÉVELOPPEUR WEB JUNIOR',
+    greeting: 'Construire des solutions utiles,',
+    headline: 'comprendre chaque ligne de code.',
+    intro: 'Je suis Narcisse Bertrand Tang Eloumou (Beker), diplômé en informatique et génie logiciel (IAI). Je conçois des applications web robustes, avec une attention rigoureuse portée à la logique métier, à la qualité du code et à l’expérience utilisateur.',
+    primary: 'Découvrir mes projets',
+    secondary: 'Me contacter',
+    location: 'Yaoundé, Cameroun · Ouvert aux opportunités',
+    profileTitle: 'À propos',
+    profileText: 'Titulaire d’une Licence en informatique et génie logiciel obtenue en 2025 à l’Institut Africain d’Informatique (IAI), je construis mon parcours à travers des projets concrets, l’apprentissage continu et la pratique assidue. Mon expérience de stage à la Communauté Urbaine de Yaoundé (CUY) m’a permis de concevoir et développer une plateforme complète de gestion de projets urbains sous encadrement professionnel.',
+    approachTitle: 'Ma méthode de travail',
+    approachText: 'Je privilégie les bases solides : analyser le besoin utilisateur, formaliser la logique métier, structurer une architecture propre, puis tester et raffiner le code. Chaque ligne produite doit être explicable, documentée et maintenable.',
+    skillsTitle: 'Stack & compétences',
+    skillsIntro: 'Les technologies que je maîtrise en production et les domaines que j’approfondis au quotidien.',
+    skillsGroups: [
+      { title: 'Frontend', items: ['JavaScript (ES6+)', 'TypeScript', 'React.js', 'Next.js', 'HTML5 / CSS3', 'Tailwind CSS'] },
+      { title: 'Backend & Données', items: ['Node.js', 'Express.js', 'PHP', 'SQL / MySQL', 'MongoDB', 'JWT / Auth', 'API RESTful'] },
+      { title: 'Méthodes & Outils', items: ['Git / GitHub', 'Vite', 'UI/UX Design', 'Agile / Scrum', 'Tests unitaires', 'Débogage'] },
+    ],
+    projectsTitle: 'Projets sélectionnés',
+    projectsIntro: 'Aperçu de mes réalisations avec démonstrations graphiques, indices clés et termes techniques qui structurent chaque projet.',
+    keywordsLabel: 'Termes clés',
+    code: 'Explorer le code source',
+    contactTitle: 'Parlons de vos projets',
+    contactText: 'Vous avez une opportunité junior, un projet web ambitieux ou souhaitez échanger autour du développement logiciel ? Je suis joignable par e-mail, WhatsApp ou via mon profil GitHub.',
+    email: 'M’écrire un e-mail',
+    github: 'Mon GitHub',
+    whatsapp: 'Discuter sur WhatsApp',
+    downloadCv: 'Télécharger mon CV',
+    footer: 'Portfolio conçu et développé avec soin par Narcisse Bertrand Tang Eloumou.',
+    status: 'Disponible pour opportunités',
+    themeLight: 'Mode Clair',
+    themeDark: 'Mode Sombre',
+  },
+  en: {
+    nav: ['Home', 'Profile', 'Skills', 'Projects', 'Contact'],
+    eyebrow: 'JUNIOR WEB DEVELOPER',
+    greeting: 'Building purposeful solutions,',
+    headline: 'mastering every line of code.',
+    intro: 'I’m Narcisse Bertrand Tang Eloumou (Beker), a Computer Science and Software Engineering graduate (IAI). I develop robust web applications with strict attention to business logic, code clarity, and user experience.',
+    primary: 'Explore my projects',
+    secondary: 'Get in touch',
+    location: 'Yaoundé, Cameroon · Open to opportunities',
+    profileTitle: 'About me',
+    profileText: 'Holding a Bachelor’s degree in Software Engineering graduated in 2025 from the African Institute of Computer Science (IAI), I build my career through practical projects, continuous learning, and rigorous hands-on practice. My internship at the Yaoundé City Council enabled me to independently build an urban project management platform under senior IT supervision.',
+    approachTitle: 'How I work',
+    approachText: 'I prioritize rock-solid fundamentals: analyze user requirements, model business logic, architect clean modular solutions, and rigorously test and refine. Every line written must be explainable, documented, and maintainable.',
+    skillsTitle: 'Stack & skills',
+    skillsIntro: 'Technologies I use in development and key areas I continuously advance.',
+    skillsGroups: [
+      { title: 'Frontend', items: ['JavaScript (ES6+)', 'TypeScript', 'React.js', 'Next.js', 'HTML5 / CSS3', 'Tailwind CSS'] },
+      { title: 'Backend & Data', items: ['Node.js', 'Express.js', 'PHP', 'SQL / MySQL', 'MongoDB', 'JWT / Auth', 'RESTful APIs'] },
+      { title: 'Practices & Tools', items: ['Git / GitHub', 'Vite', 'UI/UX Design', 'Agile / Scrum', 'Unit testing', 'Debugging'] },
+    ],
+    projectsTitle: 'Selected projects',
+    projectsIntro: 'A showcase of my projects with interactive visual mockups, contextual clues, and key terms defining each work.',
+    keywordsLabel: 'Key terms',
+    code: 'View source code',
+    contactTitle: 'Let’s connect',
+    contactText: 'Have a junior developer opening, an inspiring web project, or want to discuss software engineering? Reach me directly via email, WhatsApp, or explore my GitHub repositories.',
+    email: 'Send an email',
+    github: 'My GitHub',
+    whatsapp: 'Chat on WhatsApp',
+    downloadCv: 'Download CV',
+    footer: 'Portfolio thoughtfully designed and crafted by Narcisse Bertrand Tang Eloumou.',
+    status: 'Open to opportunities',
+    themeLight: 'Light Mode',
+    themeDark: 'Dark Mode',
+  },
+}
+
