@@ -1,6 +1,6 @@
 # Beker — Junior Web Developer
 
-**Junior Web Developer | JavaScript · TypeScript · React · Node.js**
+**Junior Software Engineer | JavaScript · TypeScript · React · Node.js**
 
 [Français](#français) · [English](#english)
 
@@ -8,29 +8,30 @@
 
 Portfolio personnel bilingue présentant mon parcours, mes compétences, mes projets et mes moyens de contact.
 
-Je suis diplômé en informatique et génie logiciel (Bac+3, 2025, IAI). Je construis mon parcours de développeur web à travers des projets concrets, l'apprentissage continu et une attention particulière à la logique métier et à la qualité du code.
+Je suis diplômé en informatique et génie logiciel (Licence, 2025, IAI). Je construis mon parcours professionnel à travers des projets concrets, l'apprentissage continu et une attention particulière à la logique métier et à la qualité du code.
 
 ### Contenu du portfolio
 
 - Présentation personnelle et approche de travail
 - Compétences et technologies utilisées ou actuellement étudiées
-- Réalisations avec liens directs vers les dépôts GitHub
-- Contact par e-mail
+- Projets avec liens directs vers les dépôts GitHub et limites explicites
+- Contact par e-mail, GitHub et LinkedIn
 - Interface responsive avec bascule français / anglais
 
 ### Projets présentés
 
-| Projet | Description |
+| Projet | État vérifiable |
 |---|---|
-| [Gestion des projets urbains — CUY](https://github.com/NBertrand1/Gest-Proj-Urb-CUY) | Application de gestion de projets, tâches, affectations, échéances et tableau de bord. |
-| [MyTaxApp](https://github.com/NBertrand1/MyTaxApp) | Projet de conception d'une plateforme fiscale ; interfaces frontend, non opérationnelle. |
-| [Mediatheque](https://github.com/NBertrand1/Mediatheque) | Bibliothèque de supports de cours PDF classés par matière. |
-| [Todo App React](https://github.com/NBertrand1/todo-app-react) | Application de tâches avec persistance locale, recherche et édition. |
-| [Morning JS](https://github.com/NBertrand1/Morning-js) | Exercices et apprentissage des fondamentaux JavaScript. |\n| [Vintage-form](https://github.com/NBertrand1/Vintage-form) | Projet frontend personnel en cours d'amélioration. |
+| [Gestion des projets urbains — CUY](https://github.com/NBertrand1/Gest-Proj-Urb-CUY) | Interface de présentation React/Vite visible dans le dépôt public ; backend et modules métier complets non vérifiables à ce stade. |
+| [MyTaxApp](https://github.com/NBertrand1/MyTaxApp) | Projet de conception et interfaces frontend ; plateforme non opérationnelle. |
+| [Mediatheque](https://github.com/NBertrand1/Mediatheque) | Prototype PHP/MySQL de bibliothèque de supports PDF, avec parcours de connexion et d'inscription ; sécurité et intégration à auditer avant production. |
+| [Todo App React](https://github.com/NBertrand1/todo-app-react) | Application React de gestion de tâches avec persistance locale, recherche et édition. |
+| [Morning JS](https://github.com/NBertrand1/Morning-js) | Dépôt d'apprentissage et mini-projets JavaScript, non présenté comme un produit de production. |
+| [Vintage-form](https://github.com/NBertrand1/Vintage-form) | Projet frontend personnel dont les fonctionnalités restent à auditer. |
 
 ### Technologies
 
-React, JavaScript, Node.js, ExpressJS, MySQL, JWT, Git, GitHub et Vite. TypeScript, NestJS et DevOps font partie de mon apprentissage en cours.
+React, JavaScript, HTML, CSS, PHP, MySQL, PDO, Git, GitHub et Vite apparaissent dans les projets présentés. TypeScript, NestJS et DevOps sont indiqués comme sujets d'apprentissage, pas comme expérience de production.
 
 ### Lancer le projet
 
@@ -50,31 +51,27 @@ npm run preview
 
 - E-mail : eloumounarcisse@gmail.com
 - GitHub : [@NBertrand1](https://github.com/NBertrand1)
+- LinkedIn : [Profil professionnel](https://www.linkedin.com/in/tang-eloumou-narcisse-bertrand-133331249/)
 
 ## English
 
-This is my bilingual personal portfolio, showcasing my background, skills, projects, and contact information.
+This bilingual personal portfolio presents my background, skills, projects, and contact information.
 
-I hold a Bachelor's degree in Computer Science and Software Engineering (2025, IAI). I am building my web development career through practical projects, continuous learning, and a focus on business logic and code quality.
+I hold a Bachelor's degree in Computer Science and Software Engineering (2025, IAI). I am building my professional path through practical projects, continuous learning, and a focus on business logic and code quality.
 
-### Portfolio sections
+### Selected projects
 
-- Personal introduction and working approach
-- Skills and technologies used or currently being learned
-- Selected projects with direct GitHub links
-- Email contact
-- Responsive interface with French / English language switch
+Project descriptions distinguish verified frontend work, learning projects, and prototypes from features that are not yet demonstrated by the public source repositories.
+
+### Technologies
+
+React, JavaScript, HTML, CSS, PHP, MySQL, PDO, Git, GitHub, and Vite are visible in the listed projects. TypeScript, NestJS, and DevOps are identified as current learning topics rather than production experience.
 
 ### Run locally
 
 ```bash
 npm install
 npm run dev
-```
-
-Build and preview:
-
-```bash
 npm run build
 npm run preview
 ```
@@ -83,7 +80,8 @@ npm run preview
 
 - Email: eloumounarcisse@gmail.com
 - GitHub: [@NBertrand1](https://github.com/NBertrand1)
+- LinkedIn: [Professional profile](https://www.linkedin.com/in/tang-eloumou-narcisse-bertrand-133331249/)
 
 ---
 
-**Status:** First personal portfolio version prepared for review. The source code should be linted, built, and browser-tested before deployment.
+**Status:** Portfolio source is under review. No deployment is implied by this repository update.
