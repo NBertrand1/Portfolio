@@ -1,36 +1,40 @@
-import React from 'react'
-import profilPic from '../assets/Moi.png'
+import { ArrowUpRightIcon } from './Icons'
 
-function Hero() {
-    return (
-        <div id='hero' className="bg-base-100/50 -sm rounded-xl p-8 w-[90%] mx-auto">
-            <div className="hero min-h-screen">
-                <div className="hero-content flex-col lg:flex-row-reverse">
-                    <img
-                        src={profilPic}
-                        alt="Portrait de Beker_Dev"
-                        className="w-lg rounded-lg -bg-conic-120 hidden lg:flex"
-                        width="512"
-                        height="512"
-                        fetchPriority="high"
-                    />
-                    <div>
-                        <h1 className="text-7xl font-bold">Salut toi !</h1>
-                        <p className="py-10 text-xl mr-5 space-y-4">
-                            Je suis un développeur web passionné par la création d'interfaces utilisateur modernes et fonctionnelles.
-                            <br />
-                            Je suis disponible pour vous aider dans vos projets web.
-                            <br />
-                            Ici vous retrouverez les technologies avec lesquelles j'suis à l'aise et quelques projets réalisés.
-                            <br />
-                            Contactez-moi pour en savoir plus.
-                        </p>
-                        <button className="btn btn-primary">Contactez-moi</button>
-                    </div>
-                </div>
-            </div>
+export default function Hero({ t, location }) {
+  return (
+    <section className="hero-section section-wrap" id="home">
+      <div className="hero-copy">
+        <p className="eyebrow">
+          <span className="status-dot" />
+          {t.eyebrow}
+        </p>
+        <h1>
+          {t.greeting}
+          <br />
+          <span>{t.headline}</span>
+        </h1>
+        <p className="hero-intro">{t.intro}</p>
+        <div className="hero-actions">
+          <a className="button button-primary" href="#projects">
+            {t.primary}
+            <ArrowUpRightIcon />
+          </a>
+          <a className="button button-secondary" href="#contact">
+            {t.secondary}
+          </a>
         </div>
-    )
-}
+        <p className="location-line">{location || t.location}</p>
+      </div>
 
-export default Hero
+      <div className="hero-aside" aria-label="Présentation visuelle">
+        <div className="orbit orbit-one" />
+        <div className="orbit orbit-two" />
+        <div className="hero-monogram">
+          B<span>.</span>
+        </div>
+        <div className="floating-note note-top">React · Node · Fullstack</div>
+        <div className="floating-note note-bottom">Concevoir · Bâtir · Fiabiliser</div>
+      </div>
+    </section>
+  )
+}
