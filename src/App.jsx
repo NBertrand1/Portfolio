@@ -13,7 +13,7 @@ const baseUrl = import.meta.env.BASE_URL
 const initialLanguage = window.location.pathname.startsWith(`${baseUrl}en`) ? 'en' : 'fr'
 
 export default function App() {
-  const [language, setLanguage] = useState(initialLanguage)
+  const language = initialLanguage
   const [menuOpen, setMenuOpen] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const t = content[language]
