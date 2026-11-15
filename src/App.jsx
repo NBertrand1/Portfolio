@@ -9,11 +9,20 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+const baseUrl = import.meta.env.BASE_URL
+const initialLanguage = window.location.pathname.startsWith(`${baseUrl}en`) ? 'en' : 'fr'
+
 export default function App() {
-  const [language, setLanguage] = useState('fr')
+  const [language, setLanguage] = useState(initialLanguage)
   const [menuOpen, setMenuOpen] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const t = content[language]
+
+  function changeLanguage(nextLanguage) {
+    if (nextLanguage === language) return
+    const destination = nextLanguage === 'en' ? `${baseUrl}en/` : baseUrl
+    window.location.assign(destination)
+  }
 
   return (
     <div className="site-shell">
@@ -22,7 +31,7 @@ export default function App() {
         theme={theme}
         toggleTheme={toggleTheme}
         language={language}
-        setLanguage={setLanguage}
+        setLanguage={changeLanguage}
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
         downloadText={t.downloadCv}
