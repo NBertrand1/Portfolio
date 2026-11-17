@@ -2,6 +2,7 @@ import { SunIcon, MoonIcon, DownloadIcon } from './Icons'
 
 export default function Navbar({
   navLabels,
+  navAria,
   theme,
   toggleTheme,
   language,
@@ -11,35 +12,36 @@ export default function Navbar({
   downloadText,
   themeLightText,
   themeDarkText,
+  themeToggle,
+  languageToggle,
+  menuOpenText,
+  menuCloseText,
   cvFileName,
 }) {
   const navAnchors = ['#home', '#about', '#skills', '#projects', '#contact']
   const cvPath = `${import.meta.env.BASE_URL}${cvFileName}`
-  const labels = language === 'fr'
-    ? { home: 'Beker — Accueil', menu: 'Basculer le menu de navigation', navigation: 'Navigation principale', theme: 'Changer le thème', language: 'Passer en anglais' }
-    : { home: 'Beker — Home', menu: 'Toggle navigation menu', navigation: 'Main navigation', theme: 'Change color theme', language: 'Switch to French' }
 
   return (
     <header className="site-header">
-      <a className="brand" href="#home" aria-label={labels.home}>
+      <a className="brand" href="#home" aria-label={language === 'fr' ? 'Beker — Accueil' : 'Beker — Home'}>
         b<span>.</span>
       </a>
 
       <button
         className="menu-toggle"
         type="button"
-        aria-label={labels.menu}
+        aria-label={menuOpen ? menuCloseText : menuOpenText}
         aria-controls="primary-navigation"
         aria-expanded={menuOpen}
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        <span aria-hidden="true">{menuOpen ? '✕' : '☰'}</span>
+        {menuOpen ? '✕' : '☰'}
       </button>
 
       <nav
         id="primary-navigation"
         className={`main-nav ${menuOpen ? 'is-open' : ''}`}
-        aria-label={labels.navigation}
+        aria-label={navAria}
       >
         {navLabels.map((label, index) => (
           <a
@@ -67,7 +69,7 @@ export default function Navbar({
           className="theme-toggle"
           type="button"
           onClick={toggleTheme}
-          aria-label={labels.theme}
+          aria-label={themeToggle}
         >
           {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
           <span>{theme === 'dark' ? themeLightText : themeDarkText}</span>
@@ -77,7 +79,7 @@ export default function Navbar({
           className="language-toggle"
           type="button"
           onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
-          aria-label={labels.language}
+          aria-label={languageToggle}
         >
           {language === 'fr' ? 'EN' : 'FR'}
         </button>
