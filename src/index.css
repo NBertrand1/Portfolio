@@ -46,29 +46,29 @@
   --text-primary: #1a2332;
   --text-secondary: #3a4a5c;
   --text-muted: #566778;
-  --text-faint: #7a8a9a;
-  --text-quiet: #94a3b3;
-  --accent: #0d9b86;
+  --text-faint: #5a6878;
+  --text-quiet: #5a6878;
+  --accent: #087565;
   --accent-bg: rgba(13, 155, 134, 0.08);
-  --accent-border: rgba(13, 155, 134, 0.4);
-  --accent-border-soft: rgba(13, 155, 134, 0.2);
+  --accent-border: rgba(8, 117, 101, 0.45);
+  --accent-border-soft: rgba(8, 117, 101, 0.25);
   --accent-glow: rgba(13, 155, 134, 0.08);
   --border: rgba(30, 50, 70, 0.1);
   --border-soft: rgba(30, 50, 70, 0.08);
   --card-bg: #ffffff;
   --card-border: rgba(30, 50, 70, 0.1);
-  --card-featured-border: rgba(13, 155, 134, 0.35);
+  --card-featured-border: rgba(8, 117, 101, 0.4);
   --tag-border: rgba(30, 50, 70, 0.15);
   --tag-color: #566778;
   --note-bg: #f0f4f8;
   --contact-bg: linear-gradient(135deg, rgba(101, 214, 196, 0.1), rgba(240, 244, 248, 0.9));
-  --contact-border: rgba(13, 155, 134, 0.2);
-  --btn-primary-bg: #0d9b86;
+  --contact-border: rgba(8, 117, 101, 0.24);
+  --btn-primary-bg: #087565;
   --btn-primary-color: #ffffff;
   --btn-secondary-border: rgba(30, 50, 70, 0.2);
   --monogram-bg: radial-gradient(circle, rgba(13, 155, 134, 0.08), rgba(245, 247, 250, 0.1) 68%);
-  --monogram-border: rgba(13, 155, 134, 0.35);
-  --orbit-border: rgba(13, 155, 134, 0.12);
+  --monogram-border: rgba(8, 117, 101, 0.4);
+  --orbit-border: rgba(8, 117, 101, 0.14);
 }
 
 /* ──────────────────────────────────────────
@@ -109,6 +109,32 @@ button {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 100;
+  padding: 12px 16px;
+  color: var(--btn-primary-color);
+  background: var(--btn-primary-bg);
+  border-radius: 4px;
+  font-weight: 800;
+  transform: translateY(-160%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+#main-content:focus {
+  outline: none;
+}
+
+main section[id] {
+  scroll-margin-top: 96px;
 }
 
 /* ──────────────────────────────────────────
