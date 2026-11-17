@@ -5,7 +5,7 @@ export default function Hero({ t, location }) {
     <section className="hero-section section-wrap" id="home">
       <div className="hero-copy">
         <p className="eyebrow">
-          <span className="status-dot" />
+          <span className="status-dot" aria-hidden="true" />
           {t.eyebrow}
         </p>
         <h1>
@@ -26,7 +26,7 @@ export default function Hero({ t, location }) {
         <p className="location-line">{location || t.location}</p>
       </div>
 
-      <div className="hero-aside" aria-label="Présentation visuelle">
+      <div className="hero-aside" aria-hidden="true">
         <div className="orbit orbit-one" />
         <div className="orbit orbit-two" />
         <div className="hero-monogram">
