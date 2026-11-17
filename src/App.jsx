@@ -26,6 +26,9 @@ export default function App() {
 
   return (
     <div className="site-shell">
+      <a className="skip-link" href="#main-content">
+        {language === 'fr' ? 'Aller au contenu principal' : 'Skip to main content'}
+      </a>
       <Navbar
         navLabels={t.nav}
         theme={theme}
@@ -40,7 +43,7 @@ export default function App() {
         cvFileName={personalInfo.cvFileName}
       />
 
-      <main id="main-content">
+      <main id="main-content" tabIndex="-1">
         <Hero t={t} location={personalInfo.location} />
         <About t={t} language={language} />
         <Skills t={t} />
