@@ -26,8 +26,12 @@ export default function App() {
 
   return (
     <div className="site-shell">
+      <a className="skip-link" href="#main-content">
+        {language === 'fr' ? 'Aller au contenu principal' : 'Skip to main content'}
+      </a>
       <Navbar
         navLabels={t.nav}
+        navAria={t.navAria}
         theme={theme}
         toggleTheme={toggleTheme}
         language={language}
@@ -37,10 +41,14 @@ export default function App() {
         downloadText={t.downloadCv}
         themeLightText={t.themeLight}
         themeDarkText={t.themeDark}
+        themeToggle={t.themeToggle}
+        languageToggle={t.languageToggle}
+        menuOpenText={t.menuOpen}
+        menuCloseText={t.menuClose}
         cvFileName={personalInfo.cvFileName}
       />
 
-      <main id="main-content">
+      <main id="main-content" tabIndex="-1">
         <Hero t={t} location={personalInfo.location} />
         <About t={t} language={language} />
         <Skills t={t} />

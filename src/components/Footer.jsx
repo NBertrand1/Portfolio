@@ -3,7 +3,7 @@ export default function Footer({ t }) {
 
   return (
     <footer className="site-footer section-wrap">
-      <a className="brand" href="#home" aria-label="Beker — Accueil">
+      <a className="brand" href="#home" aria-label={t.homeLabel}>
         b<span>.</span>
       </a>
       <p>{t.footer}</p>

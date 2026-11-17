@@ -2,6 +2,7 @@ import { SunIcon, MoonIcon, DownloadIcon } from './Icons'
 
 export default function Navbar({
   navLabels,
+  navAria,
   theme,
   toggleTheme,
   language,
@@ -11,6 +12,10 @@ export default function Navbar({
   downloadText,
   themeLightText,
   themeDarkText,
+  themeToggle,
+  languageToggle,
+  menuOpenText,
+  menuCloseText,
   cvFileName,
 }) {
   const navAnchors = ['#home', '#about', '#skills', '#projects', '#contact']
@@ -18,14 +23,15 @@ export default function Navbar({
 
   return (
     <header className="site-header">
-      <a className="brand" href="#home" aria-label="Beker — Accueil">
+      <a className="brand" href="#home" aria-label={language === 'fr' ? 'Beker — Accueil' : 'Beker — Home'}>
         b<span>.</span>
       </a>
 
       <button
         className="menu-toggle"
         type="button"
-        aria-label="Basculer le menu de navigation"
+        aria-label={menuOpen ? menuCloseText : menuOpenText}
+        aria-controls="primary-navigation"
         aria-expanded={menuOpen}
         onClick={() => setMenuOpen(!menuOpen)}
       >
@@ -33,8 +39,9 @@ export default function Navbar({
       </button>
 
       <nav
+        id="primary-navigation"
         className={`main-nav ${menuOpen ? 'is-open' : ''}`}
-        aria-label="Navigation principale"
+        aria-label={navAria}
       >
         {navLabels.map((label, index) => (
           <a
@@ -62,7 +69,7 @@ export default function Navbar({
           className="theme-toggle"
           type="button"
           onClick={toggleTheme}
-          aria-label="Basculer le thème"
+          aria-label={themeToggle}
         >
           {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
           <span>{theme === 'dark' ? themeLightText : themeDarkText}</span>
@@ -72,7 +79,7 @@ export default function Navbar({
           className="language-toggle"
           type="button"
           onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
-          aria-label="Changer de langue"
+          aria-label={languageToggle}
         >
           {language === 'fr' ? 'EN' : 'FR'}
         </button>

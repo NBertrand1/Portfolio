@@ -22,26 +22,26 @@ export default function Projects({ projects, t, language }) {
                 <span>{project.category[language]}</span>
               </div>
 
-              {/* High-fidelity interface mockup preview */}
               <div
                 className="project-preview-wrapper"
-                aria-label={`Aperçu interactif : ${project.title}`}
+                role="img"
+                aria-label={language === 'fr'
+                  ? `Aperçu visuel du projet ${project.title}`
+                  : `Visual preview of the ${project.title} project`}
               >
                 <ProjectPreview />
               </div>
 
               <h3>{project.title}</h3>
 
-              {/* Textual clue & context */}
               <div className="project-clue">
-                <span className="clue-dot" />
+                <span className="clue-dot" aria-hidden="true" />
                 <span className="clue-text">{project.clue[language]}</span>
               </div>
 
               <p className="project-description">{project.description[language]}</p>
               <p className="project-details">{project.details[language]}</p>
 
-              {/* Domain key terms */}
               <div className="project-keywords">
                 <span className="keywords-label">{t.keywordsLabel} :</span>
                 <div className="keywords-chips">
@@ -53,7 +53,6 @@ export default function Projects({ projects, t, language }) {
                 </div>
               </div>
 
-              {/* Technical stack tags */}
               <div className="tag-list project-tags">
                 {project.stack.map((item) => (
                   <span className="tag" key={item}>
@@ -62,12 +61,11 @@ export default function Projects({ projects, t, language }) {
                 ))}
               </div>
 
-              {/* Source code link */}
               <a
                 className="project-link"
                 href={project.url}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 {t.code}
                 <ArrowUpRightIcon />
