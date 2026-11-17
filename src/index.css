@@ -224,6 +224,7 @@ main section[id] {
   color: var(--accent);
   border: 1px solid var(--accent-border);
   border-radius: 4px;
+  min-height: 44px;
   padding: 9px 13px;
   font-size: 12px;
   font-weight: 800;
@@ -272,6 +273,9 @@ main section[id] {
 .menu-toggle {
   display: none;
   font-size: 16px;
+  min-width: 44px;
+  min-height: 44px;
+  justify-content: center;
 }
 
 /* ──────────────────────────────────────────
@@ -950,7 +954,10 @@ main section[id] {
 
   .cv-download,
   .theme-toggle {
+    min-width: 44px;
+    min-height: 44px;
     padding: 9px 12px;
+    justify-content: center;
   }
 }
 
