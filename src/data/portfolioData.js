@@ -192,6 +192,12 @@ export const projects = [
 export const content = {
   fr: {
     nav: ['Accueil', 'Profil', 'Compétences', 'Projets', 'Contact'],
+    navAria: 'Navigation principale',
+    menuOpen: 'Ouvrir le menu de navigation',
+    menuClose: 'Fermer le menu de navigation',
+    themeToggle: 'Changer de thème',
+    languageToggle: 'Passer en anglais',
+    homeLabel: 'Beker — Accueil',
     eyebrow: 'DÉVELOPPEUR WEB — FRONTEND & BACKEND',
     greeting: 'Construire des solutions utiles,',
     headline: 'comprendre chaque ligne de code.',
@@ -231,6 +237,12 @@ export const content = {
   },
   en: {
     nav: ['Home', 'Profile', 'Skills', 'Projects', 'Contact'],
+    navAria: 'Main navigation',
+    menuOpen: 'Open navigation menu',
+    menuClose: 'Close navigation menu',
+    themeToggle: 'Change color theme',
+    languageToggle: 'Switch to French',
+    homeLabel: 'Beker — Home',
     eyebrow: 'WEB DEVELOPER — FRONTEND & BACKEND',
     greeting: 'Building purposeful solutions,',
     headline: 'mastering every line of code.',
