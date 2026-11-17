@@ -31,6 +31,7 @@ export default function App() {
       </a>
       <Navbar
         navLabels={t.nav}
+        navAria={t.navAria}
         theme={theme}
         toggleTheme={toggleTheme}
         language={language}
@@ -40,6 +41,10 @@ export default function App() {
         downloadText={t.downloadCv}
         themeLightText={t.themeLight}
         themeDarkText={t.themeDark}
+        themeToggle={t.themeToggle}
+        languageToggle={t.languageToggle}
+        menuOpenText={t.menuOpen}
+        menuCloseText={t.menuClose}
         cvFileName={personalInfo.cvFileName}
       />
 
