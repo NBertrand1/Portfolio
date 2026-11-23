@@ -1,9 +1,10 @@
 name: Deploy portfolio to GitHub Pages
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Portfolio quality checks"]
+    types: [completed]
     branches: [main]
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -14,25 +15,34 @@ concurrency:
 
 jobs:
   build:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-24.04
     permissions:
       contents: read
     steps:
-      - name: Checkout
+      - name: Checkout validated commit
         uses: actions/checkout@v7
         with:
+          ref: ${{ github.event.workflow_run.head_sha }}
           persist-credentials: false
+
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
+
       - name: Install dependencies
         run: npm ci
+
       - name: Audit production dependencies
-        run: npm audit --omit=dev --audit-level=high
+        run: |
+          npm audit --omit=dev --json > "$RUNNER_TEMP/npm-audit-production.json" || true
+          node scripts/check-audit.mjs "$RUNNER_TEMP/npm-audit-production.json"
+
       - name: Build
         run: npm run build
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
