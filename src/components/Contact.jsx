@@ -27,7 +27,7 @@ export default function Contact({ t, personalInfo }) {
           className="button button-whatsapp"
           href={personalInfo.whatsappUrl}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <WhatsAppIcon />
           <span>{t.whatsapp}</span>
@@ -38,7 +38,7 @@ export default function Contact({ t, personalInfo }) {
           className="button button-secondary"
           href={personalInfo.githubUrl}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <GitHubIcon />
           <span>{t.github}</span>
@@ -49,7 +49,7 @@ export default function Contact({ t, personalInfo }) {
           className="button button-secondary"
           href={personalInfo.linkedinUrl}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <LinkedInIcon />
           <span>{t.linkedin}</span>

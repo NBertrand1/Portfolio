@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#0b1119" />
+    <link rel="icon" type="image/svg+xml" href="/Portfolio/favicon.svg" />
+    <title>Page introuvable — Beker Portfolio</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0b1119;
+        color: #f2f5f9;
+        font-synthesis: none;
+      }
+      * { box-sizing: border-box; }
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: radial-gradient(ellipse at 75% 15%, rgba(19, 89, 105, .2), transparent 42%), #0b1119;
+      }
+      main {
+        width: min(100%, 620px);
+        padding: clamp(28px, 6vw, 56px);
+        border: 1px solid rgba(101, 214, 196, .25);
+        border-radius: 12px;
+        background: #111b25;
+        text-align: center;
+      }
+      .code {
+        margin: 0;
+        color: #65d6c4;
+        font-size: clamp(64px, 18vw, 112px);
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: -.07em;
+      }
+      h1 { margin: 24px 0 12px; font-size: clamp(24px, 5vw, 34px); }
+      p { color: #c1ccd5; font-size: 16px; line-height: 1.7; }
+      .actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+      a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 18px;
+        border: 1px solid rgba(101, 214, 196, .45);
+        border-radius: 5px;
+        color: #65d6c4;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      a.primary { background: #65d6c4; color: #071410; }
+      a:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="code" aria-hidden="true">404</p>
+      <h1>Cette page est introuvable</h1>
+      <p>Le lien suivi est peut-être incorrect ou la page a été déplacée. Vous pouvez revenir à l’accueil du portfolio.</p>
+      <div class="actions">
+        <a class="primary" href="/Portfolio/">Retour à l’accueil</a>
+        <a href="/Portfolio/en/">English version</a>
+      </div>
+    </main>
+    <script>
+      const language = navigator.language?.toLowerCase() || '';
+      if (language.startsWith('en')) {
+        document.documentElement.lang = 'en';
+        document.title = 'Page not found — Beker Portfolio';
+        document.querySelector('h1').textContent = 'This page could not be found';
+        document.querySelector('main > p:not(.code)').textContent = 'The link may be incorrect or the page may have moved. You can return to the portfolio homepage.';
+        document.querySelector('.primary').textContent = 'Back to homepage';
+        document.querySelector('.actions a:last-child').textContent = 'Version française';
+        document.querySelector('.primary').href = '/Portfolio/en/';
+        document.querySelector('.actions a:last-child').href = '/Portfolio/';
+      }
+    </script>
+  </body>
+</html>
