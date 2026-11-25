@@ -69,7 +69,7 @@ export default function Navbar({
           className="theme-toggle"
           type="button"
           onClick={toggleTheme}
-          aria-label={themeToggle}
+          aria-label={`${theme === 'dark' ? themeLightText : themeDarkText} — ${themeToggle}`}
         >
           {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
           <span>{theme === 'dark' ? themeLightText : themeDarkText}</span>
@@ -79,7 +79,7 @@ export default function Navbar({
           className="language-toggle"
           type="button"
           onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
-          aria-label={languageToggle}
+          aria-label={`${language === 'fr' ? 'EN' : 'FR'} — ${languageToggle}`}
         >
           {language === 'fr' ? 'EN' : 'FR'}
         </button>
