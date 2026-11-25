@@ -22,40 +22,17 @@ if (report.error) {
 }
 
 const vulnerabilities = report.vulnerabilities ?? {};
-const blocking = [];
-const allowed = [];
-
-for (const [name, vulnerability] of Object.entries(vulnerabilities)) {
-  if (!["high", "critical"].includes(vulnerability.severity)) continue;
-
-  const advisories = (vulnerability.via ?? []).filter(
-    (entry) => typeof entry === "object" && entry !== null,
-  );
-
-  const isOnlyDocumentedAdvisory =
-    advisories.length > 0 &&
-    advisories.every(
-      (advisory) =>
-        advisory.url ===
-        "https://github.com/advisories/GHSA-fc5q-39xc-vjpf",
-    );
-
-  if (isOnlyDocumentedAdvisory) {
-    allowed.push({ name, severity: vulnerability.severity });
-  } else {
-    blocking.push({
-      name,
-      severity: vulnerability.severity,
-      advisories: advisories.map((advisory) => advisory.url ?? advisory.title),
-    });
-  }
-}
-
-for (const item of allowed) {
-  console.warn(
-    `TEMPORARY EXCEPTION: ${item.name} (${item.severity}) is linked only to GHSA-fc5q-39xc-vjpf.`,
-  );
-}
+const blocking = Object.entries(vulnerabilities)
+  .filter(([, vulnerability]) =>
+    ["high", "critical"].includes(vulnerability.severity),
+  )
+  .map(([name, vulnerability]) => ({
+    name,
+    severity: vulnerability.severity,
+    advisories: (vulnerability.via ?? [])
+      .filter((entry) => typeof entry === "object" && entry !== null)
+      .map((advisory) => advisory.url ?? advisory.title),
+  }));
 
 if (blocking.length > 0) {
   console.error("Blocking high/critical dependency vulnerabilities:");
@@ -63,6 +40,4 @@ if (blocking.length > 0) {
   process.exit(1);
 }
 
-console.log(
-  `Audit passed: no unapproved high/critical vulnerabilities. ${allowed.length} documented exception(s).`,
-);
+console.log("Audit passed: no high/critical dependency vulnerabilities.");
