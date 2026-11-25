@@ -1063,7 +1063,8 @@ main section[id] {
   border-color: var(--accent);
 }
 
-.form-help {
+.contact-form .form-help {
+  max-width: none;
   margin: 14px 0 0;
   color: var(--text-quiet);
   font-size: 13px;
