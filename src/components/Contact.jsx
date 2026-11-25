@@ -21,7 +21,13 @@ export default function Contact({ t, personalInfo }) {
     // Honeypot: silently ignore basic automated submissions.
     if (data.get('website')) return
 
-    if (!name || !email || !subject || !message) {
+    const requiredFields = ['name', 'email', 'subject', 'message']
+    requiredFields.forEach((fieldName) => {
+      const field = form.elements.namedItem(fieldName)
+      field.setCustomValidity(field.value.trim() ? '' : t.formRequiredError)
+    })
+
+    if (!form.checkValidity()) {
       form.reportValidity()
       return
     }
@@ -52,7 +58,7 @@ export default function Contact({ t, personalInfo }) {
       <h2>{t.contactTitle}</h2>
       <p>{t.contactText}</p>
 
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={handleSubmit} onInput={(event) => event.target.setCustomValidity('')}>
         <div className="contact-form-grid">
           <div className="form-field">
             <label htmlFor="contact-name">{t.formNameLabel}</label>
